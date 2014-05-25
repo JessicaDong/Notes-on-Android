@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+     <Button
+        android:id="@+id/creatbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       
+        android:onClick="creat"
+        android:text="creat" />
+      <Button
+        android:id="@+id/selectbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:onClick="select"
+        android:text="select" />
+         <Button
+        android:id="@+id/editbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:onClick="edit"
+        android:background="#00aeef"
+        android:text="edit" />
+           <Button
+        android:id="@+id/deletebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:onClick="delete"
+        android:text="delete" />
+      
+    
+</LinearLayout>
+   
+     <ListView
+            android:id="@+id/filelist"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+           android:fillViewport="true"
+            android:layout_marginTop="0dp" >
+            
+
+	</ListView>
+
+     <EditText
+         android:id="@+id/editword"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:inputType="textMultiLine" >
+
+         <requestFocus />
+     </EditText>
+
+     <Button
+         android:id="@+id/savebtn2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         android:onClick="save2"
+         android:text="save" />
+
+</LinearLayout>
